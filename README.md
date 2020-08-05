@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
@@ -29,4 +28,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # angular-movies-app
 app developed by angular and external movies api
->>>>>>> 29f5513c11fd98fb78b413c2e1e5e94420f82176
