@@ -1,0 +1,28 @@
+$fontFamily:'segoe ui light';
+$mainColor:#F8f8F8;
+$secondColor:#ef4836;
+$darkColor:#212121;
+$boxShadow:0 5px 13px 0px rgba(0,0,0,0.1);
+
+$lightBgColor:#24baef;
+$fontColor:#fff;
+
+
+
+body
+{
+    background-color: $darkColor;
+    color: $mainColor !important;
+}
+.bg-mine
+{
+   background-color: $lightBgColor;
+   color: $fontColor;
+}
+
+
+.movie .bg-mine
+{
+  top: 0;
+  right: 20px;
+}

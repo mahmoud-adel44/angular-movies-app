@@ -1,0 +1,15 @@
+body {
+  background-color: #212121;
+  color: #F8f8F8 !important;
+}
+
+.bg-mine {
+  background-color: #24baef;
+  color: #fff;
+}
+
+.movie .bg-mine {
+  top: 0;
+  right: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

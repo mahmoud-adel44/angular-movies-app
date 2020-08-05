@@ -1,0 +1,37 @@
+
+
+<div class="row">
+    <div class="col-md-4 d-flex align-items-center">
+        <h2>Trending Movies <br>Right Now </h2>
+    </div>
+
+    <div *ngFor='let movie of trendingMovies' class="col-md-2 position-relative movie">
+
+        <img [src]="imgprefix+movie.poster_path" class="w-100" >
+      
+      <h5>{{movie.title}}</h5>  
+      <div class="bg-mine position-absolute p-2 w-40">
+           <h6 class="">{{movie.vote_average}}</h6>    
+      </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-4 d-flex align-items-center">
+        <h2>Trending Tv <br>Right Now </h2>
+    </div>
+
+    <div *ngFor='let tv of trendingTv' class="col-md-2">
+
+        <img [src]="imgprefix+tv.poster_path" class="w-100" >
+      
+      <h5>{{tv.name}}</h5>  
+
+    </div>
+
+
+</div>

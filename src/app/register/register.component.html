@@ -1,0 +1,50 @@
+<form [formGroup]='registerForm' (ngSubmit)='getFormData(registerForm)' class="w-75 m-auto py-4">
+
+    <div class="form-group">
+        <label> first Name :</label>
+        <input
+            [class.is-invalid]="registerForm.get('first_name').invalid==true && registerForm.get('first_name').touched==true"
+            formControlName='first_name' type="text" class="form-control">
+        <div *ngIf="registerForm.get('first_name').invalid==true && registerForm.get('first_name').touched==true"
+            class="alert alert-danger" role="alert">
+            First name is Invaild
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label> last Name :</label>
+        <input
+            [class.is-invalid]="registerForm.get('last_name').invalid==true && registerForm.get('last_name').touched==true"
+            formControlName='last_name' type="text" class="form-control">
+        <div *ngIf="registerForm.get('last_name').invalid==true && registerForm.get('last_name').touched==true"
+            class="alert alert-danger" role="alert">
+            Last name is Invaild
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label> Email :</label>
+        <input [class.is-invalid]="registerForm.get('email').invalid==true && registerForm.get('email').touched==true"
+            formControlName='email' type="email" class="form-control">
+        <div *ngIf="registerForm.get('email').invalid==true && registerForm.get('email').touched==true"
+            class="alert alert-danger" role="alert">
+            Your Email is Invaild
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label> password :</label>
+        <input
+            [class.is-invalid]="registerForm.get('password').invalid==true && registerForm.get('password').touched==true"
+            formControlName='password' type="password" class="form-control">
+        <div *ngIf="registerForm.get('password').invalid==true && registerForm.get('password').touched==true"
+            class="alert alert-danger" role="alert">
+            Password is Invaild
+        </div>
+    </div>
+
+    <button [disabled]='registerForm.invalid==true' type="submit" class="btn btn-danger">Rejester</button>
+
+
+
+</form>
